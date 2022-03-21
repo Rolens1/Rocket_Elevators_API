@@ -9,5 +9,6 @@ class AddReferences < ActiveRecord::Migration[5.2]
     add_reference :elevators, :column, foreign_key: true
     add_reference :customers, :user, foreign_key: true
     add_reference :customers, :address, foreign_key: true
+    add_reference :leads, :customer, foreign_key: true
   end
 end

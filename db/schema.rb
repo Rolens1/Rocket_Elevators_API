@@ -153,16 +153,18 @@ ActiveRecord::Schema.define(version: 2022_03_21_011702) do
   end
 
   create_table "leads", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3", force: :cascade do |t|
-    t.string "fullname"
-    t.string "companyname"
-    t.string "email"
-    t.string "phone"
-    t.string "projectname"
-    t.string "projectdescription"
-    t.string "departmentincharge"
-    t.string "message"
+    t.string "FullName"
+    t.string "CompanyName"
+    t.string "Email"
+    t.string "Phone"
+    t.string "ProjectName"
+    t.string "ProjectDescription"
+    t.string "DepartmentInCharge"
+    t.string "Message"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "customer_id"
+    t.index ["customer_id"], name: "index_leads_on_customer_id"
   end
 
   create_table "quotes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3", force: :cascade do |t|
@@ -222,4 +224,5 @@ ActiveRecord::Schema.define(version: 2022_03_21_011702) do
   add_foreign_key "customers", "users"
   add_foreign_key "elevators", "columns"
   add_foreign_key "employees", "users"
+  add_foreign_key "leads", "customers"
 end

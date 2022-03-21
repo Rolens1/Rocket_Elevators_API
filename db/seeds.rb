@@ -22,7 +22,7 @@
     end
 
     # Faker generation data
-    100.times do |i|
+    10.times do |i|
     json = File.read("rrad/addresses-us-all.min.json")
     hash = JSON.parse(json, object_class: OpenStruct)
     randAdd = hash['addresses'].sample
@@ -139,18 +139,4 @@
               end
           end
           puts "Seed ##{i + 1} successful."
-      end
-
-    rand(20..40).times do
-      lead = Leads.create(
-        fullname: Faker::Name.name.gsub(/\W/, ''),
-        companyname: Faker::Company.name.gsub(/\W/, ''),
-        email: Faker::Internet.email,
-        phone: Faker::PhoneNumber.phone_number,
-        projectname: Faker::Company.industry,
-        projectdescription: Faker::Company.bs,
-        departmentincharge: Faker::IndustrySegments.sector,
-        message: Faker::Company.catch_phrase,
-        created_at: Faker::Date.between(from: '2018-09-23', to: '2022-03-17')
-      )
     end
