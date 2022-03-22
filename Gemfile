@@ -33,7 +33,7 @@ gem "groupdate"
 
 gem "chartkick"
 
-gem 'dropbox_api'
+gem "dropbox-sdk"
 
 gem 'bcrypt'
 gem "font-awesome-rails"

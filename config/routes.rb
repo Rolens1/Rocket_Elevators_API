@@ -9,8 +9,4 @@ Rails.application.routes.draw do
   resources :leads
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
-
-  #API Routes
-  get 'dropbox/auth' => 'dropbox#auth'
-  get 'dropbox/auth_callback' => 'dropbox#auth_callback'
 end
