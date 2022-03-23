@@ -34,9 +34,6 @@
         <td><%= link_to 'Edit', edit_google_map_path(google_map) %></td>
         <td><%= link_to 'Destroy', google_map, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
-      <p>
-        <%= image_tag "https://maps.googleapis.com/maps/api/staticmap?zoom=17&size=400x300&center=#{google_map.latitude},#{google_map.longitude}&key=AIzaSyDjhiwqbWxaWtLDpapcXUHQVkb27zyIslY", alt: "Map" %>
-      </p>
     <% end %>
   </tbody>
 </table>
