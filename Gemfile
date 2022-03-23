@@ -33,7 +33,7 @@ gem "groupdate"
 
 gem "chartkick"
 
-gem "dropbox-sdk"
+gem 'dropbox_api'
 
 gem "figaro"
 
