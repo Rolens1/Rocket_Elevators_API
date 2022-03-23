@@ -57,6 +57,7 @@ group :development do
   gem 'twilio-ruby', '~> 5.61', '>= 5.61.1'
   gem "figaro"
   gem 'async-websocket', '~> 0.8.0'
+  gem 'pusher'
 end
 
 group :production do
@@ -70,3 +71,5 @@ group :test do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'sendgrid-ruby'
