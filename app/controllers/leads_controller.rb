@@ -7,24 +7,23 @@ class LeadsController < ApplicationController
   end
   def create
      
-      @FullName = params[:FullName]
-      @CompanyName = params[:CompanyName]
-      @Email = params[:Email]
-      @Phone = params[:Phone]
-      @ProjectName = params[:ProjectName]
-      @ProjectDescription= params[:ProjectDescription]
-      @DepartmentInCharge = params[:DepartmentInCharge]
-      @Message = params[:Message]
+      @fullName = params[:fullName]
+      @companyName = params[:companyName]
+      @email = params[:email]
+      @phone = params[:phone]
+      @projectName = params[:projectName]
+      @projectDescription= params[:projectDescription]
+      @departmentInCharge = params[:departmentInCharge]
+      @message = params[:message]
 
-      @leads = Leads.new(FullName: @FullName, CompanyName: @CompanyName, Email: @Email, Phone: @Phone, ProjectName: @ProjectName, ProjectDescription: @ProjectDescription, DepartmentInCharge: @DepartmentInCharge, Message: @Message)
-      @leads.attachment.attach(params[:Attachment])
+      @leads = Leads.new(fullName: @fullName, companyName: @companyName, email: @email, phone: @phone, projectName: @projectName, projectDescription: @projectDescription, departmentInCharge: @departmentInCharge, message: @message)
+      @leads.attachment.attach(params[:attachment])
           if @leads.save
-            
-            redirect_to dropbox_auth_path
+            redirect_to index_path
           end
   end
   def leads_params
-      params.require(:leads).permit(:FullName, :CompanyName, :Email, :Phone, :ProjectName, :ProjectDescription, :DepartmentInCharge, :Message, Attachment:[])
+      params.require(:leads).permit(:fullName, :companyName, :email, :phone, :projectName, :projectDescription, :departmentInCharge, :message, attachment:[])
   end
 
   def update
