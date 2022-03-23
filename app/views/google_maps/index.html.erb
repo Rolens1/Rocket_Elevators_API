@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Google Maps</h1>
+<h1 style="text-align:center">Google Maps</h1>
 
-<table style="font-size:12px">
+<table style="font-size:14px; margin:100px; text-align:center">
   <thead>
     <tr>
       <th>Latitude</th>
@@ -18,7 +18,7 @@
     </tr>
   </thead>
 
-  <tbody>
+  <tbody style="font-size:12px;">
     <% @google_maps.each do |google_map| %>
       <tr>
         <td><%= google_map.latitude %></td>
@@ -30,9 +30,6 @@
         <td><%= google_map.number_of_columns %></td>
         <td><%= google_map.number_of_elevators %></td>
         <td><%= google_map.full_name_technical_contact %></td>
-        <td><%= link_to 'Show', google_map %></td>
-        <td><%= link_to 'Edit', edit_google_map_path(google_map) %></td>
-        <td><%= link_to 'Destroy', google_map, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
