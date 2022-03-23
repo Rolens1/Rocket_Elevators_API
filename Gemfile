@@ -57,6 +57,8 @@ group :development do
   gem 'twilio-ruby', '~> 5.61', '>= 5.61.1'
   gem "figaro"
   gem 'async-websocket', '~> 0.8.0'
+  gem "pusher"
+  gem 'aws-sdk'
 end
 
 group :production do

@@ -5,7 +5,7 @@ class SmsCreator
         @elevator = elevator
     end
     def send_sms        
-        message = "The Elevator: " +(@elevator.serial_number).to_s+" status has changed  to intervention"
+        message = "The Elevator with serial number: " +(@elevator.serial_number).to_s+" status has changed  to intervention"
         account_sid = ENV["pusher_app_id"]
         auth_token = ENV["pusher_key"]
         client = Twilio::REST::Client.new(account_sid, auth_token)
