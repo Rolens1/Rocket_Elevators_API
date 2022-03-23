@@ -42,3 +42,6 @@
 //= require chartkick
 //= require Chart.bundle
 
+window.mapsLoaded = function(){
+    console.log(google)
+}

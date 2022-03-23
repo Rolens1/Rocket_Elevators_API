@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_21_011702) do
+ActiveRecord::Schema.define(version: 2022_03_23_002654) do
 
   create_table "active_storage_attachments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3", force: :cascade do |t|
     t.string "name", null: false
@@ -145,11 +145,20 @@ ActiveRecord::Schema.define(version: 2022_03_21_011702) do
     t.index ["user_id"], name: "index_employees_on_user_id"
   end
 
-  create_table "graphs", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3", force: :cascade do |t|
-    t.integer "query_id"
-    t.string "time"
+  create_table "google_maps", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3", force: :cascade do |t|
+    t.decimal "latitude", precision: 10, scale: 6
+    t.decimal "longitude", precision: 10, scale: 6
+    t.string "location"
+    t.integer "number_of_floors"
+    t.string "client_name"
+    t.integer "number_of_batteries"
+    t.integer "number_of_columns"
+    t.integer "number_of_elevators"
+    t.string "full_name_technical_contact"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "customer_id"
+    t.index ["customer_id"], name: "index_google_maps_on_customer_id"
   end
 
   create_table "leads", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3", force: :cascade do |t|
@@ -224,5 +233,6 @@ ActiveRecord::Schema.define(version: 2022_03_21_011702) do
   add_foreign_key "customers", "users"
   add_foreign_key "elevators", "columns"
   add_foreign_key "employees", "users"
+  add_foreign_key "google_maps", "customers"
   add_foreign_key "leads", "customers"
 end

@@ -3,4 +3,5 @@ class Customer < ApplicationRecord
     belongs_to :address
     has_many :buildings
     has_one :lead
+    has_one :google_map
 end

@@ -35,6 +35,8 @@ gem "chartkick"
 
 gem "dropbox-sdk"
 
+gem "figaro"
+
 gem 'bcrypt'
 gem "font-awesome-rails"
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3' #newly test
