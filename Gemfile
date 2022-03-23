@@ -58,6 +58,9 @@ group :development do
   gem 'capistrano3-puma', github: "seuros/capistrano-puma"
   gem 'ed25519', '>= 1.2', '< 2.0'
   gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
+  gem 'twilio-ruby', '~> 5.61', '>= 5.61.1'
+  gem "figaro"
+  gem 'async-websocket', '~> 0.8.0'
 end
 
 group :production do
