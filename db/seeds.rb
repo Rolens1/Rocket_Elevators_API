@@ -58,7 +58,7 @@
       customer_creation_date: user.created_at,
       company_name: Faker::Company.name.gsub(/\W/, ''),
       full_name_company_contact: Faker::Name.name.gsub(/\W/, ''),
-      company_contact_phone: Faker::PhoneNumber.phone_number.gsub(/\W/, ''),
+      company_contact_phone: Faker::PhoneNumber.phone_number,
       email_company: Faker::Internet.email.gsub(/\W/, ''),
       company_description: Faker::Company.bs,
       full_name_service_technical_authority: (user.first_name + user.last_name),

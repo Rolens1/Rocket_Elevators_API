@@ -162,13 +162,13 @@ ActiveRecord::Schema.define(version: 2022_03_23_002654) do
   end
 
   create_table "leads", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3", force: :cascade do |t|
-    t.string "fullName"
-    t.string "companyName"
+    t.string "fullname"
+    t.string "companyname"
     t.string "email"
     t.string "phone"
-    t.string "projectName"
-    t.string "projectDescription"
-    t.string "departmentInCharge"
+    t.string "projectname"
+    t.string "projectdescription"
+    t.string "departmentincharge"
     t.string "message"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
