@@ -3,6 +3,6 @@ class Leads < ApplicationRecord
     has_one_attached :attachment
 
     after_save do |leads|
-        SendContactEmail.new(leads).send_to_contact
+        SendTicket.new(leads).send_ticket_contact
     end
 end

@@ -1,6 +1,5 @@
 class LeadsController < ApplicationController
     skip_before_action :verify_authenticity_token
-      
     
     def new
         @leads = Leads.new(leads_params)
@@ -15,8 +14,9 @@ class LeadsController < ApplicationController
         @projectdescription= params[:projectdescription]
         @departmentincharge = params[:departmentincharge]
         @message = params[:message]
+        @question = params[:question]
 
-        @leads = Leads.new(fullname: @fullname, companyname: @companyname, email: @email, phone: @phone, projectname: @projectname, projectdescription: @projectdescription, departmentincharge: @departmentincharge, message: @message)
+        @leads = Leads.new(fullname: @fullname, companyname: @companyname, email: @email, phone: @phone, projectname: @projectname, projectdescription: @projectdescription, departmentincharge: @departmentincharge, message: @message, question: @question)
         @leads.attachment.attach(params[:attachment])
             if @leads.save
                 redirect_to index_path

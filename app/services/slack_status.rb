@@ -7,7 +7,7 @@ class SlackStatus
 
     def send_status
         Slack.configure do |config|
-            config.token = "no token"
+            config.token = ENV["pusher_slack_api"]
         end
         
         client = Slack::Web::Client.new

@@ -75,3 +75,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'sendgrid-ruby'
 gem 'slack-ruby-client'
 gem 'async-websocket', '~> 0.8.0'
+gem 'galetahub-freshdesk', require: 'freshdesk'
+gem 'freshdesk-ruby', '~> 0.1.0'
