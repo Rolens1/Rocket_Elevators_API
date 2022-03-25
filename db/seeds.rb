@@ -53,6 +53,8 @@
       city: randAdd.city,
       postal_code: randAdd.postalCode,
       country: randAdd.state,
+      latitude: randAdd.coordinates.lat,
+      longitude: randAdd.coordinates.lng,
     )
     customer = Customer.create!(
       customer_creation_date: user.created_at,
@@ -67,18 +69,6 @@
       created_at: user.created_at,
       user_id: user.id,
       address_id: address.id
-    )
-    map = GoogleMap.create!(
-      customer_id: customer.id,
-      latitude: randAdd.coordinates.lat,
-      longitude: randAdd.coordinates.lng,
-      location: address.number_and_street + ", " + address.city + ", " + address.country + ", " + address.postal_code,
-      number_of_floors: floorsServed,
-      client_name: customer.full_name_company_contact,
-      number_of_batteries: numberBatteries,
-      number_of_columns: numberColumns,
-      number_of_elevators: numberElevators,
-      full_name_technical_contact: customer.full_name_service_technical_authority
     )
     quote = Quote.create!(
       buildingtype: ["residential", "commercial", "corporate", "hybrid"].sample,
