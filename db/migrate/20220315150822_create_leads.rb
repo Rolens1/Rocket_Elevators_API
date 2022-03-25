@@ -9,6 +9,7 @@ class CreateLeads < ActiveRecord::Migration[5.2]
       t.string :projectdescription
       t.string :departmentincharge
       t.string :message
+      t.string :question
 
       t.timestamps
     end
