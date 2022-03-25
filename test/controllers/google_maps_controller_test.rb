@@ -17,7 +17,7 @@ class GoogleMapsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create google_map" do
     assert_difference('GoogleMap.count') do
-      post google_maps_url, params: { google_map: {  } }
+      post google_maps_url, params: { google_map: { client_name: @google_map.client_name, full_name_technical_contact: @google_map.full_name_technical_contact, latitude: @google_map.latitude, location: @google_map.location, longitude: @google_map.longitude, number_of_batteries: @google_map.number_of_batteries, number_of_columns: @google_map.number_of_columns, number_of_elevators: @google_map.number_of_elevators, number_of_floors: @google_map.number_of_floors } }
     end
 
     assert_redirected_to google_map_url(GoogleMap.last)
@@ -34,7 +34,7 @@ class GoogleMapsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update google_map" do
-    patch google_map_url(@google_map), params: { google_map: {  } }
+    patch google_map_url(@google_map), params: { google_map: { client_name: @google_map.client_name, full_name_technical_contact: @google_map.full_name_technical_contact, latitude: @google_map.latitude, location: @google_map.location, longitude: @google_map.longitude, number_of_batteries: @google_map.number_of_batteries, number_of_columns: @google_map.number_of_columns, number_of_elevators: @google_map.number_of_elevators, number_of_floors: @google_map.number_of_floors } }
     assert_redirected_to google_map_url(@google_map)
   end
 

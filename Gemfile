@@ -37,6 +37,8 @@ gem 'dropbox_api'
 
 gem "figaro"
 
+gem 'google_maps_service'
+
 gem 'bcrypt'
 gem "font-awesome-rails"
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3' #newly test

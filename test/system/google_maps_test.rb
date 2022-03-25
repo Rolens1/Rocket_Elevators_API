@@ -14,6 +14,15 @@ class GoogleMapsTest < ApplicationSystemTestCase
     visit google_maps_url
     click_on "New Google Map"
 
+    fill_in "Client name", with: @google_map.client_name
+    fill_in "Full name technical contact", with: @google_map.full_name_technical_contact
+    fill_in "Latitude", with: @google_map.latitude
+    fill_in "Location", with: @google_map.location
+    fill_in "Longitude", with: @google_map.longitude
+    fill_in "Number of batteries", with: @google_map.number_of_batteries
+    fill_in "Number of columns", with: @google_map.number_of_columns
+    fill_in "Number of elevators", with: @google_map.number_of_elevators
+    fill_in "Number of floors", with: @google_map.number_of_floors
     click_on "Create Google map"
 
     assert_text "Google map was successfully created"
@@ -24,6 +33,15 @@ class GoogleMapsTest < ApplicationSystemTestCase
     visit google_maps_url
     click_on "Edit", match: :first
 
+    fill_in "Client name", with: @google_map.client_name
+    fill_in "Full name technical contact", with: @google_map.full_name_technical_contact
+    fill_in "Latitude", with: @google_map.latitude
+    fill_in "Location", with: @google_map.location
+    fill_in "Longitude", with: @google_map.longitude
+    fill_in "Number of batteries", with: @google_map.number_of_batteries
+    fill_in "Number of columns", with: @google_map.number_of_columns
+    fill_in "Number of elevators", with: @google_map.number_of_elevators
+    fill_in "Number of floors", with: @google_map.number_of_floors
     click_on "Update Google map"
 
     assert_text "Google map was successfully updated"

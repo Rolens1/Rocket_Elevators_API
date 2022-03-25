@@ -1,4 +1,49 @@
 <p id="notice"><%= notice %></p>
 
+<p>
+  <strong>Location:</strong>
+  <%= @google_map.location %>
+</p>
+
+<p>
+  <strong>Number of floors:</strong>
+  <%= @google_map.number_of_floors %>
+</p>
+
+<p>
+  <strong>Client name:</strong>
+  <%= @google_map.client_name %>
+</p>
+
+<p>
+  <strong>Number of batteries:</strong>
+  <%= @google_map.number_of_batteries %>
+</p>
+
+<p>
+  <strong>Number of columns:</strong>
+  <%= @google_map.number_of_columns %>
+</p>
+
+<p>
+  <strong>Number of elevators:</strong>
+  <%= @google_map.number_of_elevators %>
+</p>
+
+<p>
+  <strong>Full name technical contact:</strong>
+  <%= @google_map.full_name_technical_contact %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @google_map.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @google_map.longitude %>
+</p>
+
 <%= link_to 'Edit', edit_google_map_path(@google_map) %> |
 <%= link_to 'Back', google_maps_path %>
