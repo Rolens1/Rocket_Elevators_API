@@ -48,7 +48,7 @@ class QuotesController < ApplicationController
     @companyname= params[:companyname]
     @question= params[:question]
 
-    @quote = Quote.new(buildingtype: @buildingtype, numofapt: @numofapt, numoffloors: @numoffloors, numofbase: @numofbase, numofpark: @numofpark, numofcomp: @numofcomp, numofelev: @numofelev, maxocc: @maxocc, bushrs: @bushrs, corp: @corp, liftCage: @liftCage, elevatorNum: @elevatorNum, unitPrice: @unitPrice, totalPriceElevators: @totalPriceElevators, installFees: @installFees, totalPrice: @totalPrice, email: @email, companyname: @companyname question: @question)
+    @quote = Quote.new(buildingtype: @buildingtype, numofapt: @numofapt, numoffloors: @numoffloors, numofbase: @numofbase, numofpark: @numofpark, numofcomp: @numofcomp, numofelev: @numofelev, maxocc: @maxocc, bushrs: @bushrs, corp: @corp, liftCage: @liftCage, elevatorNum: @elevatorNum, unitPrice: @unitPrice, totalPriceElevators: @totalPriceElevators, installFees: @installFees, totalPrice: @totalPrice, email: @email, companyname: @companyname, question: @question)
     
         respond_to do |format|
           if @quote.save
