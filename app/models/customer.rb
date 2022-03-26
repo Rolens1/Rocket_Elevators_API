@@ -5,6 +5,7 @@ class Customer < ApplicationRecord
     has_many :buildings
     has_one :lead
     has_one :google_map
+    has_many :quotes
 
     after_create do |customer|
         dropbox_upload
@@ -14,10 +15,8 @@ class Customer < ApplicationRecord
         dropbox_upload
     end
 
-
-
     def dropbox_upload
-        client = DropboxApi::Client.new("sl.BEfqcEr17pQx6b0nFT_miKvRjNPOM4-nkqGsig0eaBnVJO3PTG3DRTAYqH4J3pRAESsCVCjBOlJUs1Mc_Jd_twlIUDBFZ0GKPyBOc65IoRVUzfbGG54eP1BRKb1kbVynpodqlAJk9uKo")
+        client = DropboxApi::Client.new(ENV['dropbox_token'])
         leads = Leads.all
         leads.each do |lead|
             if lead.attachment

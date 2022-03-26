@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_20_200121) do
+ActiveRecord::Schema.define(version: 2022_03_26_013601) do
 
   create_table "active_storage_attachments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3", force: :cascade do |t|
     t.string "name", null: false
@@ -184,6 +184,8 @@ ActiveRecord::Schema.define(version: 2022_03_20_200121) do
     t.datetime "updated_at", null: false
     t.string "email"
     t.string "companyname"
+    t.bigint "customer_id"
+    t.index ["customer_id"], name: "index_quotes_on_customer_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3", force: :cascade do |t|
@@ -221,4 +223,5 @@ ActiveRecord::Schema.define(version: 2022_03_20_200121) do
   add_foreign_key "elevators", "columns"
   add_foreign_key "employees", "users"
   add_foreign_key "leads", "customers"
+  add_foreign_key "quotes", "customers"
 end
