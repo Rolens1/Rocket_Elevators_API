@@ -16,7 +16,7 @@ class Customer < ApplicationRecord
     end
 
     def dropbox_upload
-        client = DropboxApi::Client.new("sl.BEdftrBiYQyetUSwUubQv9RNJpXFiweP0otfya1BPTrY-RzIP2xiv3afPb_CeLUufj8IHmZg6iLsrsFiXHx-FN6eFcNXXqgE4ndiO2Hkx9w291u9w5wW8HgkP7PcFrOoVFOJYOhOL3Wr")
+        client = DropboxApi::Client.new("sl.BEea3dYcFuP_mmC2zbry1VZd8Ck_V0u-NuQlvJ6CHElNHKuxFV0lYdjQHz4k8o3uuHsIs8HiYpQbWpM9SWMM7fWxptrmZxZ1RuI_iNUtytjUJRnnRa_QBKyUDUGuYB7NINdhKQqnCS1a")
         leads = Leads.all
         leads.each do |lead|
             if lead.attachment

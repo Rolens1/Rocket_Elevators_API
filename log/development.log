@@ -8796,3 +8796,716 @@ FOREIGN KEY (`customer_id`)
   [1m[35m (8.1ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:132
 >>>>>>> b095f72fd364eeb6c7b7dfab7734d22a5ab4fcde
+Started GET "/" for 127.0.0.1 at 2022-03-25 22:19:10 -0400
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (3.2ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 8408ms (Views: 8406.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2022-03-25 22:19:19 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (4.3.11) lib/puma/configuration.rb:228:in `call'
+puma (4.3.11) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.11) lib/puma/server.rb:472:in `process_client'
+puma (4.3.11) lib/puma/server.rb:328:in `block in run'
+puma (4.3.11) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/font/revicons.woff?5510888" for 127.0.0.1 at 2022-03-25 22:19:19 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/font/revicons.woff"):
+  
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (4.3.11) lib/puma/configuration.rb:228:in `call'
+puma (4.3.11) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.11) lib/puma/server.rb:472:in `process_client'
+puma (4.3.11) lib/puma/server.rb:328:in `block in run'
+puma (4.3.11) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/font/revicons.ttf?5510888" for 127.0.0.1 at 2022-03-25 22:19:19 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/font/revicons.ttf"):
+  
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (4.3.11) lib/puma/configuration.rb:228:in `call'
+puma (4.3.11) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.11) lib/puma/server.rb:472:in `process_client'
+puma (4.3.11) lib/puma/server.rb:328:in `block in run'
+puma (4.3.11) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/leads" for 127.0.0.1 at 2022-03-25 22:19:32 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"fullname"=>"John Johnson", "companyname"=>"Blah enterprises", "email"=>"blah@blah.com", "phone"=>"555-555-5556", "projectname"=>"John's John", "projectdescription"=>"Portable John", "departmentincharge"=>"Commercial", "message"=>"testr", "question"=>"tsrtst", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x000055638fcc3448 @tempfile=#<Tempfile:/tmp/RackMultipart20220325-22954-1fiokbe.jpg>, @original_filename="JackShidder.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"attachment\"; filename=\"JackShidder.jpg\"\r\nContent-Type: image/jpeg\r\n">}
+[36m  Disk Storage (1.0ms) [0m[32mUploaded file to key: 7WcHCuPxZbsJ9oz4yEbrDbuH (checksum: g6wAmcxd05SNYbj1eL9wXg==)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/leads_controller.rb:31
+  [1m[36mActiveStorage::Blob Create (0.8ms)[0m  [1m[32mINSERT INTO `active_storage_blobs` (`key`, `filename`, `content_type`, `metadata`, `byte_size`, `checksum`, `created_at`) VALUES ('7WcHCuPxZbsJ9oz4yEbrDbuH', 'JackShidder.jpg', 'image/jpeg', '{\"identified\":true}', 55530, 'g6wAmcxd05SNYbj1eL9wXg==', '2022-03-26 02:19:32')[0m
+  ↳ app/controllers/leads_controller.rb:31
+  [1m[35m (11.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/leads_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/leads_controller.rb:31
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/leads_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/leads_controller.rb:32
+  [1m[36mLeads Create (0.3ms)[0m  [1m[32mINSERT INTO `leads` (`fullname`, `companyname`, `email`, `phone`, `projectname`, `projectdescription`, `departmentincharge`, `message`, `created_at`, `updated_at`) VALUES ('John Johnson', 'Blah enterprises', 'blah@blah.com', '555-555-5556', 'John\'s John', 'Portable John', 'Commercial', 'testr', '2022-03-26 02:19:32', '2022-03-26 02:19:32')[0m
+  ↳ app/controllers/leads_controller.rb:32
+  [1m[36mActiveStorage::Attachment Create (0.4ms)[0m  [1m[32mINSERT INTO `active_storage_attachments` (`name`, `record_type`, `record_id`, `blob_id`, `created_at`) VALUES ('attachment', 'Leads', 1, 1, '2022-03-26 02:19:32')[0m
+  ↳ app/controllers/leads_controller.rb:32
+  [1m[36mLeads Update (0.3ms)[0m  [1m[33mUPDATE `leads` SET `updated_at` = '2022-03-26 02:19:32' WHERE `leads`.`id` = 1[0m
+  ↳ app/controllers/leads_controller.rb:32
+  [1m[35m (7.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/leads_controller.rb:32
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 7adb2da5-c46f-4a04-bfad-f22f2550b0e8) to Async(default) with arguments: #<GlobalID:0x000055639425baf0 @uri=#<URI::GID gid://rocket-elevators-information-system/ActiveStorage::Blob/1>>
+  [1m[36mActiveStorage::Blob Load (2.7ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7adb2da5-c46f-4a04-bfad-f22f2550b0e8] Performing ActiveStorage::AnalyzeJob (Job ID: 7adb2da5-c46f-4a04-bfad-f22f2550b0e8) from Async(default) with arguments: #<GlobalID:0x000055639414ea90 @uri=#<URI::GID gid://rocket-elevators-information-system/ActiveStorage::Blob/1>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7adb2da5-c46f-4a04-bfad-f22f2550b0e8] [36m  Disk Storage (0.4ms) [0m[34mDownloaded file from key: 7WcHCuPxZbsJ9oz4yEbrDbuH[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7adb2da5-c46f-4a04-bfad-f22f2550b0e8] Skipping image analysis because the mini_magick gem isn't installed
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7adb2da5-c46f-4a04-bfad-f22f2550b0e8]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/leads_controller.rb:39
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7adb2da5-c46f-4a04-bfad-f22f2550b0e8]   ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+  [1m[36mCustomer Create (0.6ms)[0m  [1m[32mINSERT INTO `customers` (`customer_creation_date`, `company_name`, `full_name_company_contact`, `company_contact_phone`, `email_company`, `company_description`, `full_name_service_technical_authority`, `technical_authority_phone`, `technical_authority_email`, `created_at`, `updated_at`) VALUES ('2022-03-26 02:19:33', 'Blah enterprises', 'John Johnson', '555-555-5556', 'blah@blah.com', 'target B2C interfaces', 'DongJakubowski', '963-999-9936 x1447', 'saundra_hayeshuelsio', '2022-03-26 02:19:33', '2022-03-26 02:19:33')[0m
+  ↳ app/controllers/leads_controller.rb:39
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7adb2da5-c46f-4a04-bfad-f22f2550b0e8]   [1m[36mActiveStorage::Blob Update (0.6ms)[0m  [1m[33mUPDATE `active_storage_blobs` SET `metadata` = '{\"identified\":true,\"analyzed\":true}' WHERE `active_storage_blobs`.`id` = 1[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7adb2da5-c46f-4a04-bfad-f22f2550b0e8]   ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+  [1m[36mLeads Load (0.5ms)[0m  [1m[34mSELECT `leads`.* FROM `leads`[0m
+  ↳ app/models/customer.rb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Leads' AND `active_storage_attachments`.`name` = 'attachment' LIMIT 1[0m
+  ↳ app/models/customer.rb:23
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/customer.rb:23
+[36m  Disk Storage (0.0ms) [0m[34mDownloaded file from key: 7WcHCuPxZbsJ9oz4yEbrDbuH[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7adb2da5-c46f-4a04-bfad-f22f2550b0e8]   [1m[35m (10.0ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7adb2da5-c46f-4a04-bfad-f22f2550b0e8]   ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [7adb2da5-c46f-4a04-bfad-f22f2550b0e8] Performed ActiveStorage::AnalyzeJob (Job ID: 7adb2da5-c46f-4a04-bfad-f22f2550b0e8) from Async(default) in 331.11ms
+  [1m[35m (3.9ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/leads_controller.rb:39
+Completed 500 Internal Server Error in 1501ms (ActiveRecord: 37.0ms)
+
+
+  
+DropboxApi::Errors::ExpiredAccessTokenError (invalid_access_token/):
+  
+app/models/customer.rb:27:in `block in dropbox_upload'
+app/models/customer.rb:21:in `dropbox_upload'
+app/models/customer.rb:11:in `block in <class:Customer>'
+app/controllers/leads_controller.rb:39:in `create_customer'
+app/controllers/leads_controller.rb:33:in `create'
+Started GET "/font/revicons.woff?5510888" for 127.0.0.1 at 2022-03-25 22:20:10 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/font/revicons.woff"):
+  
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (4.3.11) lib/puma/configuration.rb:228:in `call'
+puma (4.3.11) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.11) lib/puma/server.rb:472:in `process_client'
+puma (4.3.11) lib/puma/server.rb:328:in `block in run'
+puma (4.3.11) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/font/revicons.ttf?5510888" for 127.0.0.1 at 2022-03-25 22:20:10 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/font/revicons.ttf"):
+  
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (4.3.11) lib/puma/configuration.rb:228:in `call'
+puma (4.3.11) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.11) lib/puma/server.rb:472:in `process_client'
+puma (4.3.11) lib/puma/server.rb:328:in `block in run'
+puma (4.3.11) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-03-25 22:20:10 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (2.2ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/font/revicons.woff?5510888" for 127.0.0.1 at 2022-03-25 22:20:10 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/font/revicons.woff"):
+  
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (4.3.11) lib/puma/configuration.rb:228:in `call'
+puma (4.3.11) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.11) lib/puma/server.rb:472:in `process_client'
+puma (4.3.11) lib/puma/server.rb:328:in `block in run'
+puma (4.3.11) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/font/revicons.ttf?5510888" for 127.0.0.1 at 2022-03-25 22:20:10 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/font/revicons.ttf"):
+  
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (4.3.11) lib/puma/configuration.rb:228:in `call'
+puma (4.3.11) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.11) lib/puma/server.rb:472:in `process_client'
+puma (4.3.11) lib/puma/server.rb:328:in `block in run'
+puma (4.3.11) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/leads" for 127.0.0.1 at 2022-03-25 22:20:18 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"fullname"=>"John Johnson", "companyname"=>"Blah enterprises", "email"=>"blah@blah.com", "phone"=>"555-555-5556", "projectname"=>"John's John", "projectdescription"=>"Portable John", "departmentincharge"=>"Commercial", "message"=>"testr", "question"=>"tsrtst", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x00007f8181075670 @tempfile=#<Tempfile:/tmp/RackMultipart20220325-22954-b0sadf.png>, @original_filename="doogmem.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"attachment\"; filename=\"doogmem.png\"\r\nContent-Type: image/png\r\n">}
+[36m  Disk Storage (1.9ms) [0m[32mUploaded file to key: z21Yx1JtVMbrTSUD9hniUGpq (checksum: Qhuhh3YAam/nbaqgQ97jRA==)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/leads_controller.rb:31
+  [1m[36mActiveStorage::Blob Create (0.5ms)[0m  [1m[32mINSERT INTO `active_storage_blobs` (`key`, `filename`, `content_type`, `metadata`, `byte_size`, `checksum`, `created_at`) VALUES ('z21Yx1JtVMbrTSUD9hniUGpq', 'doogmem.png', 'image/png', '{\"identified\":true}', 799912, 'Qhuhh3YAam/nbaqgQ97jRA==', '2022-03-26 02:20:18')[0m
+  ↳ app/controllers/leads_controller.rb:31
+  [1m[35m (8.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/leads_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/leads_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/leads_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/leads_controller.rb:32
+  [1m[36mLeads Create (0.3ms)[0m  [1m[32mINSERT INTO `leads` (`fullname`, `companyname`, `email`, `phone`, `projectname`, `projectdescription`, `departmentincharge`, `message`, `created_at`, `updated_at`) VALUES ('John Johnson', 'Blah enterprises', 'blah@blah.com', '555-555-5556', 'John\'s John', 'Portable John', 'Commercial', 'testr', '2022-03-26 02:20:18', '2022-03-26 02:20:18')[0m
+  ↳ app/controllers/leads_controller.rb:32
+  [1m[36mActiveStorage::Attachment Create (0.5ms)[0m  [1m[32mINSERT INTO `active_storage_attachments` (`name`, `record_type`, `record_id`, `blob_id`, `created_at`) VALUES ('attachment', 'Leads', 2, 2, '2022-03-26 02:20:18')[0m
+  ↳ app/controllers/leads_controller.rb:32
+  [1m[36mLeads Update (0.3ms)[0m  [1m[33mUPDATE `leads` SET `updated_at` = '2022-03-26 02:20:18' WHERE `leads`.`id` = 2[0m
+  ↳ app/controllers/leads_controller.rb:32
+  [1m[35m (7.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/leads_controller.rb:32
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 0c55d57b-d705-4fc1-a6d0-4512215289b5) to Async(default) with arguments: #<GlobalID:0x00007f8180ecf820 @uri=#<URI::GID gid://rocket-elevators-information-system/ActiveStorage::Blob/2>>
+  [1m[36mActiveStorage::Blob Load (4.0ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0c55d57b-d705-4fc1-a6d0-4512215289b5] Performing ActiveStorage::AnalyzeJob (Job ID: 0c55d57b-d705-4fc1-a6d0-4512215289b5) from Async(default) with arguments: #<GlobalID:0x00007f8180e8b990 @uri=#<URI::GID gid://rocket-elevators-information-system/ActiveStorage::Blob/2>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0c55d57b-d705-4fc1-a6d0-4512215289b5] [36m  Disk Storage (0.9ms) [0m[34mDownloaded file from key: z21Yx1JtVMbrTSUD9hniUGpq[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0c55d57b-d705-4fc1-a6d0-4512215289b5] Skipping image analysis because the mini_magick gem isn't installed
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/leads_controller.rb:39
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0c55d57b-d705-4fc1-a6d0-4512215289b5]   [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0c55d57b-d705-4fc1-a6d0-4512215289b5]   ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+  [1m[36mCustomer Create (0.7ms)[0m  [1m[32mINSERT INTO `customers` (`customer_creation_date`, `company_name`, `full_name_company_contact`, `company_contact_phone`, `email_company`, `company_description`, `full_name_service_technical_authority`, `technical_authority_phone`, `technical_authority_email`, `created_at`, `updated_at`) VALUES ('2022-03-26 02:20:18', 'Blah enterprises', 'John Johnson', '555-555-5556', 'blah@blah.com', 'syndicate one-to-one infomediaries', 'PattieBogisichMD', '(493) 503-9917 x61671', 'eulaliabeattynet', '2022-03-26 02:20:18', '2022-03-26 02:20:18')[0m
+  ↳ app/controllers/leads_controller.rb:39
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0c55d57b-d705-4fc1-a6d0-4512215289b5]   [1m[36mActiveStorage::Blob Update (0.6ms)[0m  [1m[33mUPDATE `active_storage_blobs` SET `metadata` = '{\"identified\":true,\"analyzed\":true}' WHERE `active_storage_blobs`.`id` = 2[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0c55d57b-d705-4fc1-a6d0-4512215289b5]   ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+  [1m[36mLeads Load (0.3ms)[0m  [1m[34mSELECT `leads`.* FROM `leads`[0m
+  ↳ app/models/customer.rb:21
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Leads' AND `active_storage_attachments`.`name` = 'attachment' LIMIT 1[0m
+  ↳ app/models/customer.rb:23
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/customer.rb:23
+[36m  Disk Storage (0.0ms) [0m[34mDownloaded file from key: 7WcHCuPxZbsJ9oz4yEbrDbuH[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0c55d57b-d705-4fc1-a6d0-4512215289b5]   [1m[35m (8.3ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0c55d57b-d705-4fc1-a6d0-4512215289b5]   ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [0c55d57b-d705-4fc1-a6d0-4512215289b5] Performed ActiveStorage::AnalyzeJob (Job ID: 0c55d57b-d705-4fc1-a6d0-4512215289b5) from Async(default) in 21.45ms
+  [1m[35m (4.0ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/leads_controller.rb:39
+Completed 500 Internal Server Error in 938ms (ActiveRecord: 31.4ms)
+
+
+  
+DropboxApi::Errors::ExpiredAccessTokenError (invalid_access_token/.):
+  
+app/models/customer.rb:27:in `block in dropbox_upload'
+app/models/customer.rb:21:in `dropbox_upload'
+app/models/customer.rb:11:in `block in <class:Customer>'
+app/controllers/leads_controller.rb:39:in `create_customer'
+app/controllers/leads_controller.rb:33:in `create'
+Started GET "/font/revicons.woff?5510888" for 127.0.0.1 at 2022-03-25 22:20:44 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/font/revicons.woff"):
+  
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (4.3.11) lib/puma/configuration.rb:228:in `call'
+puma (4.3.11) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.11) lib/puma/server.rb:472:in `process_client'
+puma (4.3.11) lib/puma/server.rb:328:in `block in run'
+puma (4.3.11) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/font/revicons.ttf?5510888" for 127.0.0.1 at 2022-03-25 22:20:44 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/font/revicons.ttf"):
+  
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (4.3.11) lib/puma/configuration.rb:228:in `call'
+puma (4.3.11) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.11) lib/puma/server.rb:472:in `process_client'
+puma (4.3.11) lib/puma/server.rb:328:in `block in run'
+puma (4.3.11) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-03-25 22:20:45 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (2.5ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/font/revicons.woff?5510888" for 127.0.0.1 at 2022-03-25 22:20:45 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/font/revicons.woff"):
+  
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (4.3.11) lib/puma/configuration.rb:228:in `call'
+puma (4.3.11) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.11) lib/puma/server.rb:472:in `process_client'
+puma (4.3.11) lib/puma/server.rb:328:in `block in run'
+puma (4.3.11) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/font/revicons.ttf?5510888" for 127.0.0.1 at 2022-03-25 22:20:45 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/font/revicons.ttf"):
+  
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (4.3.11) lib/puma/configuration.rb:228:in `call'
+puma (4.3.11) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.11) lib/puma/server.rb:472:in `process_client'
+puma (4.3.11) lib/puma/server.rb:328:in `block in run'
+puma (4.3.11) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/leads" for 127.0.0.1 at 2022-03-25 22:20:47 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"fullname"=>"John Johnson", "companyname"=>"Blah enterprises", "email"=>"blah@blah.com", "phone"=>"555-555-5556", "projectname"=>"John's John", "projectdescription"=>"Portable John", "departmentincharge"=>"Commercial", "message"=>"testr", "question"=>"tsrtst", "attachment"=>#<ActionDispatch::Http::UploadedFile:0x00007f8180fcbd50 @tempfile=#<Tempfile:/tmp/RackMultipart20220325-22954-xvi70h.png>, @original_filename="doogmem.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"attachment\"; filename=\"doogmem.png\"\r\nContent-Type: image/png\r\n">}
+[36m  Disk Storage (2.0ms) [0m[32mUploaded file to key: r7P25SoXzg7xyRSF1TrAbqBg (checksum: Qhuhh3YAam/nbaqgQ97jRA==)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/leads_controller.rb:31
+  [1m[36mActiveStorage::Blob Create (0.2ms)[0m  [1m[32mINSERT INTO `active_storage_blobs` (`key`, `filename`, `content_type`, `metadata`, `byte_size`, `checksum`, `created_at`) VALUES ('r7P25SoXzg7xyRSF1TrAbqBg', 'doogmem.png', 'image/png', '{\"identified\":true}', 799912, 'Qhuhh3YAam/nbaqgQ97jRA==', '2022-03-26 02:20:47')[0m
+  ↳ app/controllers/leads_controller.rb:31
+  [1m[35m (9.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/leads_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/leads_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/leads_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/leads_controller.rb:32
+  [1m[36mLeads Create (0.3ms)[0m  [1m[32mINSERT INTO `leads` (`fullname`, `companyname`, `email`, `phone`, `projectname`, `projectdescription`, `departmentincharge`, `message`, `created_at`, `updated_at`) VALUES ('John Johnson', 'Blah enterprises', 'blah@blah.com', '555-555-5556', 'John\'s John', 'Portable John', 'Commercial', 'testr', '2022-03-26 02:20:47', '2022-03-26 02:20:47')[0m
+  ↳ app/controllers/leads_controller.rb:32
+  [1m[36mActiveStorage::Attachment Create (0.4ms)[0m  [1m[32mINSERT INTO `active_storage_attachments` (`name`, `record_type`, `record_id`, `blob_id`, `created_at`) VALUES ('attachment', 'Leads', 3, 3, '2022-03-26 02:20:47')[0m
+  ↳ app/controllers/leads_controller.rb:32
+  [1m[36mLeads Update (0.3ms)[0m  [1m[33mUPDATE `leads` SET `updated_at` = '2022-03-26 02:20:47' WHERE `leads`.`id` = 3[0m
+  ↳ app/controllers/leads_controller.rb:32
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/leads_controller.rb:32
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 3cba20f5-2ac2-4e05-be5e-42be08f51e88) to Async(default) with arguments: #<GlobalID:0x00007f8180dfc088 @uri=#<URI::GID gid://rocket-elevators-information-system/ActiveStorage::Blob/3>>
+  [1m[36mActiveStorage::Blob Load (4.1ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3cba20f5-2ac2-4e05-be5e-42be08f51e88] Performing ActiveStorage::AnalyzeJob (Job ID: 3cba20f5-2ac2-4e05-be5e-42be08f51e88) from Async(default) with arguments: #<GlobalID:0x00007f8180d9bc38 @uri=#<URI::GID gid://rocket-elevators-information-system/ActiveStorage::Blob/3>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3cba20f5-2ac2-4e05-be5e-42be08f51e88] [36m  Disk Storage (0.8ms) [0m[34mDownloaded file from key: r7P25SoXzg7xyRSF1TrAbqBg[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3cba20f5-2ac2-4e05-be5e-42be08f51e88] Skipping image analysis because the mini_magick gem isn't installed
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/leads_controller.rb:39
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3cba20f5-2ac2-4e05-be5e-42be08f51e88]   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3cba20f5-2ac2-4e05-be5e-42be08f51e88]   ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+  [1m[36mCustomer Create (0.8ms)[0m  [1m[32mINSERT INTO `customers` (`customer_creation_date`, `company_name`, `full_name_company_contact`, `company_contact_phone`, `email_company`, `company_description`, `full_name_service_technical_authority`, `technical_authority_phone`, `technical_authority_email`, `created_at`, `updated_at`) VALUES ('2022-03-26 02:20:47', 'Blah enterprises', 'John Johnson', '555-555-5556', 'blah@blah.com', 'reintermediate next-generation eyeballs', 'CurtSwift', '(459) 012-6612', 'giovannaboscocartwrightorg', '2022-03-26 02:20:47', '2022-03-26 02:20:47')[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3cba20f5-2ac2-4e05-be5e-42be08f51e88]   [1m[36mActiveStorage::Blob Update (0.4ms)[0m  [1m[33mUPDATE `active_storage_blobs` SET `metadata` = '{\"identified\":true,\"analyzed\":true}' WHERE `active_storage_blobs`.`id` = 3[0m
+  ↳ app/controllers/leads_controller.rb:39
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3cba20f5-2ac2-4e05-be5e-42be08f51e88]   ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+  [1m[36mLeads Load (0.3ms)[0m  [1m[34mSELECT `leads`.* FROM `leads`[0m
+  ↳ app/models/customer.rb:21
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'Leads' AND `active_storage_attachments`.`name` = 'attachment' LIMIT 1[0m
+  ↳ app/models/customer.rb:23
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/customer.rb:23
+[36m  Disk Storage (0.1ms) [0m[34mDownloaded file from key: 7WcHCuPxZbsJ9oz4yEbrDbuH[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3cba20f5-2ac2-4e05-be5e-42be08f51e88]   [1m[35m (8.5ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3cba20f5-2ac2-4e05-be5e-42be08f51e88]   ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::AnalyzeJob] [3cba20f5-2ac2-4e05-be5e-42be08f51e88] Performed ActiveStorage::AnalyzeJob (Job ID: 3cba20f5-2ac2-4e05-be5e-42be08f51e88) from Async(default) in 21.11ms
+  [1m[36mLeads Destroy (0.4ms)[0m  [1m[31mDELETE FROM `leads` WHERE `leads`.`id` = 1[0m
+  ↳ app/models/customer.rb:28
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'Leads' AND `active_storage_attachments`.`name` = 'attachment' LIMIT 1[0m
+  ↳ app/models/customer.rb:23
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+  ↳ app/models/customer.rb:23
+[36m  Disk Storage (0.2ms) [0m[34mDownloaded file from key: z21Yx1JtVMbrTSUD9hniUGpq[0m
+  [1m[36mLeads Destroy (0.3ms)[0m  [1m[31mDELETE FROM `leads` WHERE `leads`.`id` = 2[0m
+  ↳ app/models/customer.rb:28
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'Leads' AND `active_storage_attachments`.`name` = 'attachment' LIMIT 1[0m
+  ↳ app/models/customer.rb:23
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+  ↳ app/models/customer.rb:23
+[36m  Disk Storage (0.2ms) [0m[34mDownloaded file from key: r7P25SoXzg7xyRSF1TrAbqBg[0m
+  [1m[36mLeads Destroy (0.5ms)[0m  [1m[31mDELETE FROM `leads` WHERE `leads`.`id` = 3[0m
+  ↳ app/models/customer.rb:28
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/leads_controller.rb:39
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/leads_controller.rb:39
+  [1m[36mActiveStorage::Attachment Destroy (0.2ms)[0m  [1m[31mDELETE FROM `active_storage_attachments` WHERE `active_storage_attachments`.`id` = 1[0m
+  ↳ app/controllers/leads_controller.rb:39
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/leads_controller.rb:39
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 7ad536c2-672c-47ff-9159-e1ee98747ace) to Async(default) with arguments: #<GlobalID:0x00007f8180c8d418 @uri=#<URI::GID gid://rocket-elevators-information-system/ActiveStorage::Blob/1>>
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/leads_controller.rb:39
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::PurgeJob] [7ad536c2-672c-47ff-9159-e1ee98747ace] Performing ActiveStorage::PurgeJob (Job ID: 7ad536c2-672c-47ff-9159-e1ee98747ace) from Async(default) with arguments: #<GlobalID:0x00007f8180c84f48 @uri=#<URI::GID gid://rocket-elevators-information-system/ActiveStorage::Blob/1>>
+  [1m[36mActiveStorage::Attachment Destroy (0.5ms)[0m  [1m[31mDELETE FROM `active_storage_attachments` WHERE `active_storage_attachments`.`id` = 2[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [7ad536c2-672c-47ff-9159-e1ee98747ace]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/leads_controller.rb:39
+[ActiveJob] [ActiveStorage::PurgeJob] [7ad536c2-672c-47ff-9159-e1ee98747ace]   ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/leads_controller.rb:39
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: fb223423-2656-4cc2-b685-24a3050ccc86) to Async(default) with arguments: #<GlobalID:0x00007f8180c4cf80 @uri=#<URI::GID gid://rocket-elevators-information-system/ActiveStorage::Blob/2>>
+[ActiveJob] [ActiveStorage::PurgeJob] [7ad536c2-672c-47ff-9159-e1ee98747ace]   [1m[36mActiveStorage::Attachment Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM `active_storage_attachments` WHERE `active_storage_attachments`.`blob_id` = 1 LIMIT 1[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [7ad536c2-672c-47ff-9159-e1ee98747ace]   ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [7ad536c2-672c-47ff-9159-e1ee98747ace]   [1m[36mActiveStorage::Blob Destroy (0.3ms)[0m  [1m[31mDELETE FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1[0m
+  ↳ app/controllers/leads_controller.rb:39
+  ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::PurgeJob] [7ad536c2-672c-47ff-9159-e1ee98747ace]   ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::PurgeJob] [fb223423-2656-4cc2-b685-24a3050ccc86] Performing ActiveStorage::PurgeJob (Job ID: fb223423-2656-4cc2-b685-24a3050ccc86) from Async(default) with arguments: #<GlobalID:0x00007f8180c42a08 @uri=#<URI::GID gid://rocket-elevators-information-system/ActiveStorage::Blob/2>>
+  [1m[36mActiveStorage::Attachment Destroy (0.2ms)[0m  [1m[31mDELETE FROM `active_storage_attachments` WHERE `active_storage_attachments`.`id` = 3[0m
+  ↳ app/controllers/leads_controller.rb:39
+[ActiveJob] [ActiveStorage::PurgeJob] [fb223423-2656-4cc2-b685-24a3050ccc86]   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [fb223423-2656-4cc2-b685-24a3050ccc86]   ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::PurgeJob] [fb223423-2656-4cc2-b685-24a3050ccc86]   [1m[36mActiveStorage::Attachment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `active_storage_attachments` WHERE `active_storage_attachments`.`blob_id` = 2 LIMIT 1[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [fb223423-2656-4cc2-b685-24a3050ccc86]   ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::PurgeJob] [fb223423-2656-4cc2-b685-24a3050ccc86]   [1m[36mActiveStorage::Blob Destroy (0.3ms)[0m  [1m[31mDELETE FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [fb223423-2656-4cc2-b685-24a3050ccc86]   ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::PurgeJob] [7ad536c2-672c-47ff-9159-e1ee98747ace]   [1m[35m (10.8ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [7ad536c2-672c-47ff-9159-e1ee98747ace]   ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::PurgeJob] [7ad536c2-672c-47ff-9159-e1ee98747ace]   [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'ActiveStorage::Blob' AND `active_storage_attachments`.`name` = 'preview_image' LIMIT 1[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [7ad536c2-672c-47ff-9159-e1ee98747ace]   ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::PurgeJob] [7ad536c2-672c-47ff-9159-e1ee98747ace] [36m  Disk Storage (0.1ms) [0m[31mDeleted file from key: 7WcHCuPxZbsJ9oz4yEbrDbuH[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [7ad536c2-672c-47ff-9159-e1ee98747ace] [36m  Disk Storage (0.0ms) [0m[31mDeleted files by key prefix: variants/7WcHCuPxZbsJ9oz4yEbrDbuH/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [7ad536c2-672c-47ff-9159-e1ee98747ace] Performed ActiveStorage::PurgeJob (Job ID: 7ad536c2-672c-47ff-9159-e1ee98747ace) from Async(default) in 24.85ms
+  [1m[35m (13.7ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [fb223423-2656-4cc2-b685-24a3050ccc86]   [1m[35m (12.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/leads_controller.rb:39
+[ActiveJob] [ActiveStorage::PurgeJob] [fb223423-2656-4cc2-b685-24a3050ccc86]   ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 1e97e1f4-6c28-48de-a1dd-8865011a1d51) to Async(default) with arguments: #<GlobalID:0x00007f81808a9ae0 @uri=#<URI::GID gid://rocket-elevators-information-system/ActiveStorage::Blob/3>>
+Redirected to http://localhost:3000/dropbox/authorize
+[ActiveJob] [ActiveStorage::PurgeJob] [fb223423-2656-4cc2-b685-24a3050ccc86]   [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 2 AND `active_storage_attachments`.`record_type` = 'ActiveStorage::Blob' AND `active_storage_attachments`.`name` = 'preview_image' LIMIT 1[0m
+Completed 302 Found in 3994ms (ActiveRecord: 66.0ms)
+
+
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3 LIMIT 1[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [fb223423-2656-4cc2-b685-24a3050ccc86]   ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+  ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::PurgeJob] [fb223423-2656-4cc2-b685-24a3050ccc86] [36m  Disk Storage (0.3ms) [0m[31mDeleted file from key: z21Yx1JtVMbrTSUD9hniUGpq[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [fb223423-2656-4cc2-b685-24a3050ccc86] [36m  Disk Storage (0.0ms) [0m[31mDeleted files by key prefix: variants/z21Yx1JtVMbrTSUD9hniUGpq/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [fb223423-2656-4cc2-b685-24a3050ccc86] Performed ActiveStorage::PurgeJob (Job ID: fb223423-2656-4cc2-b685-24a3050ccc86) from Async(default) in 18.91ms
+[ActiveJob] [ActiveStorage::PurgeJob] [1e97e1f4-6c28-48de-a1dd-8865011a1d51] Performing ActiveStorage::PurgeJob (Job ID: 1e97e1f4-6c28-48de-a1dd-8865011a1d51) from Async(default) with arguments: #<GlobalID:0x00007f818089b0f8 @uri=#<URI::GID gid://rocket-elevators-information-system/ActiveStorage::Blob/3>>
+[ActiveJob] [ActiveStorage::PurgeJob] [1e97e1f4-6c28-48de-a1dd-8865011a1d51]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [1e97e1f4-6c28-48de-a1dd-8865011a1d51]   ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::PurgeJob] [1e97e1f4-6c28-48de-a1dd-8865011a1d51]   [1m[36mActiveStorage::Attachment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `active_storage_attachments` WHERE `active_storage_attachments`.`blob_id` = 3 LIMIT 1[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [1e97e1f4-6c28-48de-a1dd-8865011a1d51]   ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::PurgeJob] [1e97e1f4-6c28-48de-a1dd-8865011a1d51]   [1m[36mActiveStorage::Blob Destroy (0.2ms)[0m  [1m[31mDELETE FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 3[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [1e97e1f4-6c28-48de-a1dd-8865011a1d51]   ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+Started GET "/dropbox/authorize" for 127.0.0.1 at 2022-03-25 22:20:51 -0400
+Processing by DropboxController#authorize as HTML
+Redirected to https://www.dropbox.com/oauth2/authorize?client_id=4tbznw39ccn6mdb&redirect_uri=http://localhost:3000/dropbox/authorize_callback&response_type=code
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+[ActiveJob] [ActiveStorage::PurgeJob] [1e97e1f4-6c28-48de-a1dd-8865011a1d51]   [1m[35m (9.6ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [1e97e1f4-6c28-48de-a1dd-8865011a1d51]   ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::PurgeJob] [1e97e1f4-6c28-48de-a1dd-8865011a1d51]   [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 3 AND `active_storage_attachments`.`record_type` = 'ActiveStorage::Blob' AND `active_storage_attachments`.`name` = 'preview_image' LIMIT 1[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [1e97e1f4-6c28-48de-a1dd-8865011a1d51]   ↳ /home/wevertr/.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/activerecord-5.2.7/lib/active_record/log_subscriber.rb:98
+[ActiveJob] [ActiveStorage::PurgeJob] [1e97e1f4-6c28-48de-a1dd-8865011a1d51] [36m  Disk Storage (0.1ms) [0m[31mDeleted file from key: r7P25SoXzg7xyRSF1TrAbqBg[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [1e97e1f4-6c28-48de-a1dd-8865011a1d51] [36m  Disk Storage (0.0ms) [0m[31mDeleted files by key prefix: variants/r7P25SoXzg7xyRSF1TrAbqBg/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [1e97e1f4-6c28-48de-a1dd-8865011a1d51] Performed ActiveStorage::PurgeJob (Job ID: 1e97e1f4-6c28-48de-a1dd-8865011a1d51) from Async(default) in 15.02ms
+Started GET "/dropbox/authorize_callback?code=MgXFuz3F67IAAAAAAAAAPw59rf8OnVSyVai6oaXeUM0" for 127.0.0.1 at 2022-03-25 22:20:58 -0400
+Processing by DropboxController#authorize_callback as HTML
+  Parameters: {"code"=>"MgXFuz3F67IAAAAAAAAAPw59rf8OnVSyVai6oaXeUM0"}
+Redirected to http://localhost:3000/index
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2022-03-25 22:20:58 -0400
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (2.7ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/font/revicons.woff?5510888" for 127.0.0.1 at 2022-03-25 22:20:58 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/font/revicons.woff"):
+  
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (4.3.11) lib/puma/configuration.rb:228:in `call'
+puma (4.3.11) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.11) lib/puma/server.rb:472:in `process_client'
+puma (4.3.11) lib/puma/server.rb:328:in `block in run'
+puma (4.3.11) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/font/revicons.ttf?5510888" for 127.0.0.1 at 2022-03-25 22:20:58 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/font/revicons.ttf"):
+  
+actionpack (5.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.7) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.7) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.7) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.7) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.7) lib/rails/engine.rb:524:in `call'
+puma (4.3.11) lib/puma/configuration.rb:228:in `call'
+puma (4.3.11) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.11) lib/puma/server.rb:472:in `process_client'
+puma (4.3.11) lib/puma/server.rb:328:in `block in run'
+puma (4.3.11) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
