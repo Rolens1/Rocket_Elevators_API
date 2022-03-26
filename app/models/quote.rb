@@ -4,4 +4,5 @@ class Quote < ApplicationRecord
     after_save do |quote|
         SendTicket.new(quote).send_ticket_quotes
     end
+
 end
