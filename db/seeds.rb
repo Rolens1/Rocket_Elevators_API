@@ -22,18 +22,22 @@
     end
 
     # Faker generation data
-    5.times do |i|
+    20.times do |i|
     json = File.read("rrad/addresses-us-all.min.json")
     hash = JSON.parse(json, object_class: OpenStruct)
     randAdd = hash['addresses'].sample
     typeAddress = ["residential", "commercial", "corporate", "hybrid"]
-    # if randAdd.address2.length != 0
+    if randAdd.address2.length != 0
       fullAddress = randAdd.address1 + ", " + randAdd.city + ", "  + randAdd.state + ", "  + randAdd.postalCode
-      # address2 = randAdd.address2
-    # else
-    #   fullAddress = randAdd.address1 + ", "  + randAdd.city + ", "  + randAdd.state + ", "  + randAdd.postalCode
-    #   address2 = "N/A"
-    # end
+      address2 = randAdd.address2
+    else
+      fullAddress = randAdd.address1 + ", "  + randAdd.city + ", "  + randAdd.state + ", "  + randAdd.postalCode
+      address2 = "N/A"
+    end
+    numberBatteries = Random.new.rand(1..3)
+    numberColumns = Random.new.rand(1..4)
+    numberElevators = Random.new.rand(1..6)
+    floorsServed = Random.new.rand(10..100)
 
     user = User.create(
     last_name: Faker::Name.last_name.gsub(/\W/, ''), 
@@ -49,12 +53,14 @@
       city: randAdd.city,
       postal_code: randAdd.postalCode,
       country: randAdd.state,
+      latitude: randAdd.coordinates.lat,
+      longitude: randAdd.coordinates.lng,
     )
     customer = Customer.create!(
       customer_creation_date: user.created_at,
       company_name: Faker::Company.name.gsub(/\W/, ''),
       full_name_company_contact: Faker::Name.name.gsub(/\W/, ''),
-      company_contact_phone: Faker::PhoneNumber.phone_number.gsub(/\W/, ''),
+      company_contact_phone: Faker::PhoneNumber.phone_number,
       email_company: Faker::Internet.email.gsub(/\W/, ''),
       company_description: Faker::Company.bs,
       full_name_service_technical_authority: (user.first_name + user.last_name),
@@ -101,7 +107,7 @@
             information_key: ["type","year_of_construction","architecture","maximum_number_of_occupants","number_of_floors"],
             value: [['Residential', 'Commercial', 'Corporate'].sample,Faker::Date.between(from: '2018-09-23', to: '2022-03-17'),["Ancient Roman architecture","Resort architecture","Art Deco"].sample,Faker::Number.within(range: 1..100)]
           )
-          rand(1..3).times do
+          numberBatteries.times do
               battery = Battery.create!(
                 building_id: building.id,
                 employee_id: Random.new.rand(1..11),
@@ -113,16 +119,16 @@
                 information: "Let me tell you 'bout my battery.",
                 notes: Faker::Company.bs
               )
-              rand(1..4).times do
+              numberColumns.times do
                 column = Column.create!(
                   types: battery.types,
-                  number_of_floors_served: Random.new.rand(10..100),
+                  number_of_floors_served: floorsServed,
                   status: battery.status,
                   information: "Let me tell you 'bout my column.",
                   notes: battery.notes,
                   battery_id: battery.id
                 )
-                rand(1..6).times do
+                numberElevators.times do
                   elevator = Elevator.create!(
                     column_id: column.id,
                     serial_number: Faker::Number.leading_zero_number(digits: 10),
@@ -139,18 +145,4 @@
               end
           end
           puts "Seed ##{i + 1} successful."
-      end
-
-    rand(20..40).times do
-      lead = Leads.create(
-        fullname: Faker::Name.name.gsub(/\W/, ''),
-        companyname: Faker::Company.name.gsub(/\W/, ''),
-        email: Faker::Internet.email,
-        phone: Faker::PhoneNumber.phone_number,
-        projectname: Faker::Company.industry,
-        projectdescription: Faker::Company.bs,
-        departmentincharge: Faker::IndustrySegments.sector,
-        message: Faker::Company.catch_phrase,
-        created_at: Faker::Date.between(from: '2018-09-23', to: '2022-03-17')
-      )
     end
