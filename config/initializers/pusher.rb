@@ -11,33 +11,41 @@
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
 
 #google
-pusher_google_app_key: AIzaSyDjhiwqbWxaWtLDpapcXUHQVkb27zyIslY
+pusher_google_app_key: ENV['pusher_google_app_key']
 #dropbox
-pusher_dropbox_client_id: 4tbznw39ccn6mdb
-pusher_dropbox_client_secret: g7fioaudemuh7gk
+pusher_dropbox_client_id: ENV['pusher_dropbox_client_id']
+pusher_dropbox_client_secret: ENV['pusher_dropbox_client_secret']
 #twilio
-pusher_twilio_app_id: 'AC0c67c9223d71aea93cf4070658201a0e'
-pusher_twilio_key: '5107daa4441883f9fad8320729341532'
+pusher_twilio_app_id: ENV['pusher_twilio_app_id']
+pusher_twilio_key: ENV['pusher_twilio_key']
 #polly
-pusher_aws_access_key_id: 'AKIAUHSIRNG4VDYRAH5Y'
-pusher_aws_secret_access_key: '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'
+pusher_aws_access_key_id: ENV['pusher_aws_access_key_id']
+pusher_aws_secret_access_key: ENV['pusher_aws_secret_access_key']
 #sendgrid
-pusher_sendgrid_api: "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"
+pusher_sendgrid_api: ENV['pusher_sendgrid_api']
 #freshdesk
-pusher_ticket_uri: "https://rocketelevators-twr.freshdesk.com/api/v2/tickets"
-pusher_ticket_api: "2eNYamK9GB0OHZElk1EP"
+pusher_ticket_uri: ENV['pusher_ticket_uri']
+pusher_ticket_api: ENV['pusher_ticket_api']
 #slack
-pusher_slack_api: "xoxb-461156293569-3284724322403-uoR3T780SO4F17YNsoKUzVnk"
+pusher_slack_api: ENV['pusher_slack_api']
+
 
 production:
-  pusher_google_app_key: AIzaSyDjhiwqbWxaWtLDpapcXUHQVkb27zyIslY
-  pusher_app_id: 'AC0c67c9223d71aea93cf4070658201a0e'
-  pusher_key: '5107daa4441883f9fad8320729341532'
-  pusher_aws_access_key_id: 'AKIAUHSIRNG4VDYRAH5Y'
-  pusher_aws_secret_access_key: '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'
-  pusher_dropbox_client_id: 4tbznw39ccn6mdb
-  pusher_dropbox_client_secret: g7fioaudemuh7gk
-  pusher_sendgrid_api: "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"
-  pusher_ticket_uri: "https://rocketelevators-twr.freshdesk.com/api/v2/tickets"
-  pusher_ticket_api: "2eNYamK9GB0OHZElk1EP"
-  pusher_slack_api: "xoxb-461156293569-3284724322403-uoR3T780SO4F17YNsoKUzVnk"
+    #google
+    pusher_google_app_key: ENV['pusher_google_app_key']
+    #dropbox
+    pusher_dropbox_client_id: ENV['pusher_dropbox_client_id']
+    pusher_dropbox_client_secret: ENV['pusher_dropbox_client_secret']
+    #twilio
+    pusher_twilio_app_id: ENV['pusher_twilio_app_id']
+    pusher_twilio_key: ENV['pusher_twilio_key']
+    #polly
+    pusher_aws_access_key_id: ENV['pusher_aws_access_key_id']
+    pusher_aws_secret_access_key: ENV['pusher_aws_secret_access_key']
+    #sendgrid
+    pusher_sendgrid_api: ENV['pusher_sendgrid_api']
+    #freshdesk
+    pusher_ticket_uri: ENV['pusher_ticket_uri']
+    pusher_ticket_api: ENV['pusher_ticket_api']
+    #slack
+    pusher_slack_api: ENV['pusher_slack_api']
