@@ -1,5 +1,5 @@
 #google
-Pusher.google_app_key = ENV['Pusher.google_app_key']
+Pusher.google_app_key = ENV['pusher_google_app_key']
 #dropbox
 Pusher.dropbox_client_id = ENV['pusher_dropbox_client_id']
 Pusher.dropbox_client_secret = ENV['pusher_dropbox_client_secret']
