@@ -156,6 +156,7 @@ ActiveRecord::Schema.define(version: 2022_03_20_200121) do
     t.string "projectdescription"
     t.string "departmentincharge"
     t.string "message"
+    t.string "question"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "customer_id"

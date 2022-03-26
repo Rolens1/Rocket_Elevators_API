@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :google_maps
+  resources :maps
+  resources :graphs
   root to: "pages#index"
   get "/index", to:"pages#index"
   get "/quote", to:"pages#quote"
@@ -13,4 +14,10 @@ Rails.application.routes.draw do
 
   get "/dropbox/authorize"
   get "/dropbox/authorize_callback"
+end
+
+Rails.application.routes.draw do
+  get 'maps/index'
+  root to: 'maps#index'
+  resources :maps, only: [:index]
 end

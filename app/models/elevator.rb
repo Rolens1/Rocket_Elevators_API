@@ -7,6 +7,7 @@ class Elevator < ApplicationRecord
         if self.status == 'intervention'
          SmsCreator.new(elevator).send_sms
         end  
+        SlackStatus.new(elevator).send_status
     end
     
 end    
