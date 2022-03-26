@@ -19,6 +19,7 @@ gem 'devise', '~> 4.8', '>= 4.8.1'
 #RailsAdmin
 gem 'rails_admin', '~> 2.2', '>= 2.2.1'
 
+
 gem 'multiverse', '~> 0.2.2'
 
 gem 'pg', '~> 1.3', '>= 1.3.4'

@@ -1,15 +1,20 @@
+require 'base64'
 class GraphsController < ApplicationController
   before_action :set_graph, only: %i[ show edit update destroy ]
   before_action :authenticate_user!
   skip_before_action :verify_authenticity_token
+ 
+  
 
   # GET /graphs or /graphs.json
   def index
+    Synthesizer.synthesize
     @graphs = Graph.all
   end
 
   # GET /graphs/1 or /graphs/1.json
   def show
+    
   end
 
   # GET /graphs/new

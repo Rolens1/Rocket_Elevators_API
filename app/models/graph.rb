@@ -1,2 +1,3 @@
 class Graph < ApplicationRecord
+   
 end
