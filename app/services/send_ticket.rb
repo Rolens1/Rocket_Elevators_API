@@ -11,7 +11,7 @@ class SendTicket
 
       uri = URI.parse("https://rocketelevators-twr.freshdesk.com/api/v2/tickets")
       request = Net::HTTP::Post.new(uri)
-      request.basic_auth(ENV["pusher_ticket_api"], "X")
+      request.basic_auth(ENV["pusher_ticket_api"] , "X")
       request.content_type = "application/json"
       msg = "The contact " + @leads.fullname.to_s + " from company "+ @leads.companyname.to_s+ " can be reached at email "+ @leads.email.to_s+ "and at a phone number " + @leads.phone.to_s+". "+@leads.departmentincharge.to_s+ "has a project named "+@leads.projectname.to_s+" wich require contribution from Rokcet Elevatos \n" + @leads.projectdescription.to_s+ "\n"+@leads.question.to_s+ "\n"+"The Contact uploaded an attachment"
       request.body = JSON.dump({
