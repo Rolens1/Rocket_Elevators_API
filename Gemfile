@@ -19,6 +19,7 @@ gem 'devise', '~> 4.8', '>= 4.8.1'
 #RailsAdmin
 gem 'rails_admin', '~> 2.2', '>= 2.2.1'
 
+
 gem 'multiverse', '~> 0.2.2'
 
 gem 'pg', '~> 1.3', '>= 1.3.4'
@@ -62,7 +63,8 @@ group :development do
   gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
   gem 'twilio-ruby', '~> 5.61', '>= 5.61.1'
   gem 'async-websocket', '~> 0.8.0'
-  gem 'pusher'
+  gem "pusher"
+  gem 'aws-sdk'
 end
 
 group :production do

@@ -6,7 +6,9 @@ RailsAdmin.config do |config|
   config.authenticate_with do
     warden.authenticate! scope: :user
   end
-  config.current_user_method(&:current_user)
+  config.navigation_static_links = {
+    'Briefing' => '/polly' #or whatever you used to mount RailsAdmin in your routes file
+  }
 
   ## == CancanCan ==
   # config.authorize_with :cancancan
@@ -37,8 +39,8 @@ RailsAdmin.config do |config|
     show_in_app
 
     ## With an audit adapter, you can add:
-    # history_index
-    # history_show
+   history_index
+  history_show
   end
 
 end
