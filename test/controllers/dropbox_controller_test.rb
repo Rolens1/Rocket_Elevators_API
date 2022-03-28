@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class GraphTest < ActiveSupport::TestCase
+class DropboxControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end

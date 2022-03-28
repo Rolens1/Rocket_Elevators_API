@@ -34,6 +34,12 @@ gem "groupdate"
 
 gem "chartkick"
 
+gem 'dropbox_api'
+
+gem "figaro"
+
+gem 'google_maps_service'
+
 gem 'bcrypt'
 gem "font-awesome-rails"
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3' #newly test
@@ -56,7 +62,6 @@ group :development do
   gem 'ed25519', '>= 1.2', '< 2.0'
   gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
   gem 'twilio-ruby', '~> 5.61', '>= 5.61.1'
-  gem "figaro"
   gem 'async-websocket', '~> 0.8.0'
   gem "pusher"
   gem 'aws-sdk'
@@ -73,3 +78,8 @@ group :test do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'sendgrid-ruby'
+gem 'slack-ruby-client'
+gem 'galetahub-freshdesk', require: 'freshdesk'
+gem 'freshdesk-ruby', '~> 0.1.0'

@@ -8,7 +8,6 @@ class GraphsController < ApplicationController
 
   # GET /graphs or /graphs.json
   def index
-    Synthesizer.synthesize
     @graphs = Graph.all
   end
 

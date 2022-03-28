@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2022_03_26_011433) do
+=======
+ActiveRecord::Schema.define(version: 2022_03_26_013601) do
+>>>>>>> ed47e5d966cbe6100f937232ec829197413e0857
 
   create_table "active_storage_attachments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3", force: :cascade do |t|
     t.string "name", null: false
@@ -43,6 +47,8 @@ ActiveRecord::Schema.define(version: 2022_03_26_011433) do
     t.string "postal_code"
     t.string "country"
     t.string "notes"
+    t.decimal "latitude", precision: 10
+    t.decimal "longitude", precision: 10
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -150,13 +156,6 @@ ActiveRecord::Schema.define(version: 2022_03_26_011433) do
     t.index ["user_id"], name: "index_employees_on_user_id"
   end
 
-  create_table "graphs", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3", force: :cascade do |t|
-    t.integer "query_id"
-    t.string "time"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "leads", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3", force: :cascade do |t|
     t.string "fullname"
     t.string "companyname"
@@ -166,8 +165,11 @@ ActiveRecord::Schema.define(version: 2022_03_26_011433) do
     t.string "projectdescription"
     t.string "departmentincharge"
     t.string "message"
+    t.string "question"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "customer_id"
+    t.index ["customer_id"], name: "index_leads_on_customer_id"
   end
 
   create_table "pollies", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3", force: :cascade do |t|
@@ -196,6 +198,8 @@ ActiveRecord::Schema.define(version: 2022_03_26_011433) do
     t.datetime "updated_at", null: false
     t.string "email"
     t.string "companyname"
+    t.bigint "customer_id"
+    t.index ["customer_id"], name: "index_quotes_on_customer_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3", force: :cascade do |t|
@@ -232,4 +236,6 @@ ActiveRecord::Schema.define(version: 2022_03_26_011433) do
   add_foreign_key "customers", "users"
   add_foreign_key "elevators", "columns"
   add_foreign_key "employees", "users"
+  add_foreign_key "leads", "customers"
+  add_foreign_key "quotes", "customers"
 end
