@@ -27,69 +27,8 @@ namespace TodoApi.Controllers
         {
             return await _context.Interventions.ToListAsync();
         }
-
+        
         // GET: api/Intervention/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Intervention>> GetIntervention(long id)
-        {
-            var intervention = await _context.Interventions.FindAsync(id);
-
-            if (intervention == null)
-            {
-                return NotFound();
-            }
-
-            return intervention;
-        }
-
-        // PUT: api/Intervention/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutIntervention(long id, Intervention intervention)
-        {
-            if (id != intervention.Id)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(intervention).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!InterventionExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
-        }
-
-        // POST: api/Intervention
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
-        public async Task<ActionResult<Intervention>> PostIntervention(Intervention intervention)
-        {
-            _context.Interventions.Add(intervention);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetIntervention", new { id = intervention.Id }, intervention);
-        }
-
-        private bool InterventionExists(long id)
-        {
-            return _context.Interventions.Any(e => e.Id == id);
-        }
-
-                // GET: api/Intervention/5
         [HttpGet("{status}")]
         public async Task<ActionResult<Intervention>> GetInterventionStatus(string status)
         {
