@@ -99,15 +99,6 @@ namespace TodoApi.Controllers
             {
                 return NotFound();
             }
-
-            return intervention;
-        }
-
-        // PUT: api/Intervention/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{status}")]
-        public async Task<IActionResult> PutInterventionStatus(string status, Intervention intervention)
-        {
             if (status != intervention.Status)
             {
                 return BadRequest();
@@ -121,41 +112,7 @@ namespace TodoApi.Controllers
                 intervention.EndDateIntervention = DateTime.Now;
             }
 
-            _context.Entry(intervention).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!InterventionStatusExists(status))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
-        }
-
-        // POST: api/Intervention
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
-        public async Task<ActionResult<Intervention>> PostInterventionStatus(Intervention intervention)
-        {
-            _context.Interventions.Add(intervention);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetInterventionStatus", new { status = intervention.Status }, intervention);
-        }
-
-        private bool InterventionStatusExists(string status)
-        {
-            return _context.Interventions.Any(e => e.Status == status);
+            return intervention;
         }
     }
 }
